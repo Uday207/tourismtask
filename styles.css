@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    /*background: -webkit-gradient(linear,left top,right bottom,from(#af5e94),to(#4b28c6))fixed;*/
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+.background img{
+    height: 130vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+
+}
+.background nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.side-navbar{
+     /*position: absolute;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background: red;*/
+    position: absolute;
+    top: 38%;
+    left: 3%;
+    width: 20%;
+    height: 100%;
+    background: transparent;
+
+}
+.right-arrow{
+    position: absolute;
+    top: 80%;
+    left: 90%;
+    font-size: 40px;
+    color: white;
+}
+.right-arrow button{
+    background: transparent;
+    color: white;
+}
+.background .slide{
+
+}
+.side-navbar ul li{
+    list-style: none;
+    margin-top: 10px;
+
+}
+.side-navbar ul li i {
+    color: white;
+}
+.side-navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.background nav h1 {
+    color: white;
+    font-size: 40px;
+}
+.background nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+.background nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.content {
+    position: absolute;
+    right: 10%;
+    width: calc(100% - 20%);
+    height: 100%;
+    top: 38%;
+    background: transparent;
+    text-align: center;
+}
+.content h1 {
+    font-size: 4rem;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .5rem;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+/*signup page*/
+
+
+.container {
+     width: 100%;
+    height: 100vh;
+    /*background: -webkit-gradient(linear,left top,right bottom,from(#af5e94),to(#4b28c6))fixed;*/
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+}
+.container .form{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 50%);
+    height: 100%;
+    background: transparent;
+}
+.info div {
+    font-size: 2rem;
+    color: white;
+    margin-top: 15%;
+}
+.info div h1{
+    margin-left: 8%;
+}
+.info nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 5%;
+    margin-left: 9%;
+    font-size: .8rem;
+    
+}
+.info nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+ .form .form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 1%;
+    background: transparent;
+    /*backdrop-filter: blur(15px);*/
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+}
+/*.form-box h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: blue;
+    
+}*/
+.form-box .input-box{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    padding-right: 28px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 16px;
+    font-weight: 500;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: .5s ease;
+   
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+
+}
+.forgot{
+    font-size: 14px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+.forgot a{
+    color: red;
+    /*text-decoration: none;*/
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: red;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+.form-box .register{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 15px;
+}
+.reg-link{
+    margin-left: 5%;
+    color: white;
+}
+.other {
+    margin-top: 5px;
+    text-align: center;
+}
+.social-icons {
+    text-align: center;
+    
+}
+.social-icons ul li a{
+        text-decoration: none;
+        color: white;
+}
+
+.social-icons ul li {
+    list-style: none;
+    display: inline-block;
+    font-size: 25px;
+    margin-top: 10px;
+    margin: 10px;
+}
+.colour {
+    width: 100%;
+    height: 100vh;
+    background-color: yellow;: 
+}
+.colour .left-block {
+    position: absolute;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    background: red;
+}
+.colour .right-block {
+    position: absolute;
+    right: 0;
+    width: calc(100% - 35%);
+    height: 100%;
+    background: blue;
+}
+.colourone {
+    width: 100%;
+    height: 100vh;
+    background-color: white;: 
+}
+.colourtwo {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;: 
+}
+.colourthree {
+    width: 100%;
+    height: 100vh;
+    background-color: black;: 
+}
+.left-contact {
+    position: absolute;
+    top: 0;
+    left: 15%;
+    width: 20%;
+    height: 100%;
+    background: transparent;
+    align-items: center;
+}
+.left-contact h4{
+    text-align: left;
+    margin-top: 50%;
+    font-size: 2rem;
+    color: white;
+    text-decoration: underline;
+
+}
+.left-contact h1{
+    text-align: left;
+    margin-top: 3%;
+    font-size: 3rem;
+    color: white;
+
+}
+.right-contact {
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    width: calc(100% - 40% - 20%);;
+    height: 100%;
+    background: transparent;
+    align-items: center;
+}
+
+form {
+  box-sizing: border-box;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: transparent;
+  /*border: 4px solid hsl(0, 0%, 90%);*/
+  gap: 2rem;
+  color: white;
+  margin: 5px;
+}
+
+.full-width {
+  grid-column: span 1;
+}
+input,
+textarea {
+  
+  
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input,
+textarea {
+  border: 2px solid #333;
+  background-color: white;
+  border-radius: 0.25rem;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  font: 1.25rem / 1.5 sans-serif;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+}
+button {
+  font: 1.25rem sans-serif;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  padding: 0.75rem 1.25rem;
+}
+button[type="submit"] {
+  background-color: hsl(213, 73%, 50%);
+  color: white;
+}
+
+button[type="reset"] {
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.video-container {
+    flex: 1;
+    background-position: center;
+    z-index: -1;
+
+}
+.move img{
+    background-size: cover;
+}
+.summary-data {
+    position: absolute;
+    right: 10%;
+    width: calc(100% - 20%);
+    height: 100%;
+    top: 38%;
+    background: transparent;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    
+}
+.summary-data h1 {
+    font-size: 3rem;
+}
